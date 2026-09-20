@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+   <!-- This is the import section that connects the CSS and JS to this page,
+  The meta tag has been included for any special characters that may be used -->
+    <script src = "javaScript.js"></script> 
+    <meta charset="UTF-8">  
+    <link rel="stylesheet" href ="style.css">
+    <title>CalculatorPage</title>   
+</head>
+<body>
+    <header>
+        <h1>Take Home Pay Calculator</h1>
+        <nav class ="navflex">
+          <ul>
+            <!-- This is the nav bar section that provides the links between each page,
+            Using CSS, if the user hovers over the link the background is changed from being a block color to an image -->
+            <li id ="homeImage"><a href="index.html">Homepage</a> </li>
+            <li  id="calcImage"><a href="takehome.html">Take Home Pay Calculator</a> </li>
+            <li id ="vacanImage"><a href="vacancies.html">Vacancies Search</a> </li>
+          </ul>
+        </nav>
+      </header>
+      <br>
+    <fieldset>
+    <legend>Enter your details and calculate your Net pay</legend>
+    <br>
+    <!-- This is the input section for the calculator, it uses several different input option types
+    But requires that all the information be filled in order to produce an accurate output for the user -->
+    <form action = "./javaScript.js" method = "POST" id = "calculatorForm">
+        <label for = "jobTitle"><a href ="./vacancies.html">Title: </a></label> 
+        <input type = "text" name = "jobTitle" id = "jobTitle" required>
+        <br>
+        <label for = "grossPay">Gross Pay: </label>
+        <input type = "number" name = "grossPay" id = "grossPay" required>
+        <br>
+        <label for = "payTimeframe">Pay Timeframe:</label>
+        <select id = "payTimeframe" name = "payTimeframe">
+            <option value = "year">Year</option>
+            <option value = "month">Month</option>
+            <option value = "week">Week</option>
+            <option value = "hour">Hour</option>
+        </select>
+        <br>
+        <label for = "hoursWorked">Hours per week: </label>
+        <input type = "number" name = "hoursWorked" id = "hoursWorked" min = "1" max = "168" required> 
+        <br>
+        <label for = "taxRate">Tax Rate: </label>
+        <input type = "number" name = "taxRate" id = "taxRate" min = "1" max = "100" required> 
+        <br>
+        <label for = "nationalInsurenceRate">NI Rate: </label>
+        <input type = "number" name = "nationalInsurenceRate" id = "nationalInsurenceRate" min = "1" max = "168" required> 
+        <br>
+        <input type = "submit" value = "Calculate" onclick = "Calculator(event)">
+    </form>
+    </fieldset>
+
+    <!-- This paragraph is empty to allow for the javascript to modify it to produce the results from all of the calculations -->
+    <br>
+    <p id = "resultText"></p>
+    
+    <div id="calculationHistory"></div>
+
+    
+</body>
+</html>
+
+
+
+<!--
+jobTitle - do the javascript or link to the other site to show (extra marks)
+GrossPay - simple input
+payTimeframe - dropdown menu
+HoursPerWeek - simple input BUT with the validation to make sure that the user can put in too many or too few
+TaxRate - simple input (same idea as above)
+NationalInsurenceRate - simple input (same idea as above)
+-->

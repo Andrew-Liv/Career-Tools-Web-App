@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <!-- This is the import section that connects the CSS and JS to this page,
+  The meta tag has been included for any special characters that may be used -->
+    <script defer src = "javaScript.js"></script> 
+    <meta charset="UTF-8">  
+    <link rel="stylesheet" href ="style.css"> 
+    <title>VacanciesPage</title>   
+</head>
+<body>
+    <header>
+        <h1>Search for Vacancies</h1>
+        <nav class ="navflex">
+          <ul>
+            <!-- This is the nav bar section that provides the links between each page,
+            Using CSS, if the user hovers over the link the background is changed from being a block color to an image -->
+            <li id ="homeImage"><a href="index.html">Homepage</a> </li>
+            <li  id="calcImage"><a href="takehome.html">Take Home Pay Calculator</a> </li>
+            <li id ="vacanImage"><a href="vacancies.html">Vacancies Search</a> </li>
+          </ul>
+        </nav>
+      </header>
+      <br>
+      
+      <!-- This is just a simple for that takes the information given by the user and is taken using JS to pass onto the API to produce a result -->
+      <div class = "container">
+      <form id='vacanciesForm' method = "get">
+        <fieldset class="card">
+        <h3>Vacancies Search</h3>
+        <input id='jobType' type='text' placeholder='Enter a Job Title' required>
+        <br>
+        <label for="location" >Location:</label>
+        <input type="text" id="location" placeholder="Filter by Location">
+
+        <input type="submit" value='Search'>
+    </fieldset>
+    </form>
+</div>
+
+
+
+<div id = "Explanation">
+    <p>Enter the details to the form, using each cateogry as a filter to find the 10 most relevant jobs! Some details are required to be able to produce an output! </p>
+</div>
+    <p><span id="result"></span></p>
+</body>
+</html>

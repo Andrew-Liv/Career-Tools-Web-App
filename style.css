@@ -1,0 +1,519 @@
+/* GLOBAL STYLES*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #f4f6f8;
+}
+
+body {
+    margin: 0;
+    padding: 0 0 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #263238;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    background-color: #1f2937;
+    color: white;
+    padding: 28px 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+header h1 {
+    max-width: 1100px;
+    margin: 0 auto 24px;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* NAVIGATION*/
+
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: #374151;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+nav li {
+    flex: 1;
+}
+
+nav li a {
+    display: block;
+    padding: 14px 18px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+/* Simple modern hover effect */
+nav li a:hover {
+    background-color: #4b5563;
+}
+
+/* Remove the old image-based navigation effects */
+#calcImage:hover a,
+#vacanImage:hover a,
+#homeImage:hover a {
+    background-image: none;
+    color: #ffffff;
+}
+
+/* HOMEPAGE SECTIONS */
+
+#aboutSection,
+#calcSection,
+#vacanciesSection {
+    max-width: 1100px;
+    margin: 24px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    background-image: none;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+#aboutSection {
+    border-left: 5px solid #2563eb;
+}
+
+#calcSection {
+    border-left: 5px solid #059669;
+}
+
+#vacanciesSection {
+    border-left: 5px solid #7c3aed;
+}
+
+#aboutSection p,
+#calcSection p,
+#vacanciesSection p {
+    margin: 0;
+    color: #4b5563;
+}
+
+h3 {
+    margin: 0 0 12px;
+    color: #1f2937;
+    font-size: 1.35rem;
+    font-weight: 600;
+    text-align: left;
+    text-transform: none;
+    text-decoration: none;
+}
+
+/*FORMS*/
+
+form {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+fieldset {
+    margin: 24px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+legend {
+    padding: 8px 14px;
+    background-color: #1f2937;
+    color: #ffffff;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+label {
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    color: #374151;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+label a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+label a:hover {
+    text-decoration: underline;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+input[list],
+input[type="time"],
+select,
+textarea {
+    width: 100%;
+    padding: 11px 12px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #1f2937;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[list]:focus,
+input[type="time"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/*BUTTONS*/
+
+input[type="submit"] {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #1d4ed8;
+}
+
+input[type="submit"]:active {
+    transform: translateY(1px);
+}
+
+/*CALCULATOR RESULTS*/
+
+#resultText {
+    max-width: 550px;
+    margin: 24px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #dbeafe;
+    border-left: 5px solid #2563eb;
+    border-radius: 8px;
+    color: #374151;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+/*VACANCIES PAGE*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+    gap: 20px;
+    background-image: none;
+}
+
+#vacanciesForm {
+    width: 100%;
+    max-width: 650px;
+    opacity: 1;
+}
+
+#vacanciesForm fieldset {
+    width: 100%;
+    margin: 0;
+}
+
+#jobType,
+#location,
+#employmentType {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+
+#Explanation {
+    max-width: 650px;
+    margin: 24px auto;
+    padding: 18px 22px;
+    color: #4b5563;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-left: 5px solid #7c3aed;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+#Explanation p {
+    margin: 0;
+}
+
+#result {
+    display: block;
+    max-width: 900px;
+    margin: 24px auto;
+}
+
+/*VACANCY RESULTS*/
+
+.fullInformation {
+    display: none;
+    margin-top: 10px;
+}
+
+.fullInformation.visible {
+    display: block;
+}
+
+.col_symbol {
+    float: right;
+    cursor: pointer;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+#result_section {
+    display: none;
+}
+
+/* UTILITY CLASSES*/
+
+.hidden {
+    display: none;
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+
+@media screen and (max-width: 700px) {
+
+    body {
+        padding-bottom: 20px;
+    }
+
+    header {
+        padding: 20px 12px 0;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        margin-bottom: 18px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        border-radius: 8px 8px 0 0;
+    }
+
+    nav li {
+        width: 100%;
+    }
+
+    nav li a {
+        padding: 12px;
+        border-bottom: 1px solid #4b5563;
+    }
+
+    nav li:last-child a {
+        border-bottom: none;
+    }
+
+    #aboutSection,
+    #calcSection,
+    #vacanciesSection {
+        margin: 18px 12px;
+        padding: 22px;
+    }
+
+    fieldset {
+        margin: 18px 12px;
+        padding: 22px;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    #resultText {
+        margin: 18px 12px;
+    }
+
+    .container {
+        padding: 0 12px;
+        margin-top: 18px;
+    }
+
+    #Explanation {
+        margin: 18px 12px;
+    }
+
+
+    /* CALCULATOR HISTORY */
+
+#calculationHistory {
+    max-width: 550px;
+    margin: 24px auto;
+    padding: 24px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+#calculationHistory h3 {
+    margin-bottom: 18px;
+}
+
+.historyItem {
+    padding: 14px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.historyItem:last-of-type {
+    border-bottom: none;
+}
+
+.historyItem strong {
+    color: #1f2937;
+}
+
+.historyItem p {
+    margin: 4px 0 0;
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+.clearHistoryButton {
+    margin-top: 18px;
+    padding: 9px 14px;
+    background-color: #6b7280;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.clearHistoryButton:hover {
+    background-color: #4b5563;
+}
+
+
+/*APPLICATION MESSAGES*/
+
+.errorMessage {
+    margin: 0;
+    padding: 14px 16px;
+    background-color: #fef2f2;
+    color: #991b1b;
+    border-left: 4px solid #dc2626;
+    border-radius: 6px;
+}
+
+.loadingMessage {
+    margin: 0;
+    padding: 14px 16px;
+    background-color: #eff6ff;
+    color: #1e40af;
+    border-left: 4px solid #2563eb;
+    border-radius: 6px;
+}
+
+.noResultsMessage {
+    margin: 0;
+    padding: 14px 16px;
+    background-color: #f9fafb;
+    color: #4b5563;
+    border-left: 4px solid #6b7280;
+    border-radius: 6px;
+}
+
+
+/*   VACANCY CARDS*/
+.vacancyCard {
+    margin: 16px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.vacancyCard h3 {
+    margin: 0;
+    padding-right: 35px;
+    position: relative;
+}
+
+.vacancyCard .col_symbol {
+    float: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.2rem;
+}
+
+.vacancyCard .fullInformation {
+    display: none;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.vacancyCard .fullInformation.visible {
+    display: block;
+}
+
+.vacancyCard .detailsPara {
+    color: #4b5563;
+}
+
+.vacancyCard a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.vacancyCard a:hover {
+    text-decoration: underline;
+}
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <!-- This is the import section that connects the CSS and JS to this page,
+  The meta tag has been included for any special characters that may be used -->
+    <script src = "javaScript.js"></script> 
+    <meta charset="UTF-8">  
+    <link rel="stylesheet" href ="style.css">
+    <title>Homepage</title>   
+</head>
+<body>
+    <header>
+        <h1>Homepage</h1>
+        <nav class ="navflex">
+          <ul>
+            <!-- This is the nav bar section that provides the links between each page,
+            Using CSS, if the user hovers over the link the background is changed from being a block color to an image -->
+            <li id ="homeImage"><a href="index.html">Homepage</a> </li>
+            <li  id="calcImage"><a href="takehome.html">Take Home Pay Calculator</a> </li>
+            <li id ="vacanImage"><a href="vacancies.html">Vacancies Search</a> </li>
+          </ul>
+        </nav>
+      </header>
+      <br>  
+      <!-- This is the section that tells the user about the website and each gives a brief discription of each page and their function -->
+      <div id = "aboutSection">
+        <h3>About the Site</h3> 
+        <p>This website consists of 3 pages; a homepage, a calculator and a search page for jobs. Click the icons above to move between each page, Be careful for some inputs on each page they are required in order to be able to generate a result for you!</p>
+      </div>
+      <br>
+      <div id = "calcSection">
+        <h3>Calculator</h3>
+        <p>By simply entering the relevant information, your take home pay can be calculated and displayed in a nice neat format! Whilst showing all the details you entered and allowing changes so the calculator is updated with the simple press of a button! If youre unsure about the job title section feel free to click the words 'Title' and you'll be taken to our Vacancies Search page!</p>
+      </div>
+      <br>
+      <div id = "vacanciesSection">
+        <h3>Vacancies Search</h3>
+        <p>Using the form you can enter a job title and see relevant job postings that corespond with that job, theres even a handy filter for location so you see relevant vacancies in that area! Click on the '+' or '-' to expand or collapse the information about each job, results have been limited to the top 10 relevant results based on your inputs.</p>
+      </div>
+    </body>
+</html>
